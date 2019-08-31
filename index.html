@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style>
+            body
+            {
+                background-color: #e8e7e7;
+            }
+            *
+            {
+                padding: 0;
+                margin: 0;
+            }
+            .header
+            {
+                  background-image:url(images/acrylic-art-artistic-1289899.jpg);
+                  background-size: cover;
+                  background-attachment: fixed;
+                  overflow: hidden;
+                  background-position: top;
+                  padding-bottom: 15px;
+            }
+            .big-one
+            {
+                margin-top:50px;
+                padding-bottom: 9px;
+            }
+            h1
+            {
+                margin: 0;
+                color: #f7f7f7;
+                font-size: 40px;
+                font-weight: 600;
+                text-transform: capitalize
+                
+            }
+            h2
+            {
+                color: #000;
+                font-size: 40px;
+                font-weight: 600;
+                text-transform: capitalize
+            }
+            .div-note
+            {
+                padding-top: 50px;
+            }
+            textarea.form-control
+            {
+                height: 350px;
+                resize: none;
+                background-color: transparent;
+                border: none;
+                margin-top: 30px;
+                border-radius: 0;
+                box-shadow:none;
+                outline: 0px;
+                border-bottom: 1px solid #401627;
+                color: #fff;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+            .form-control:hover,
+            .form-control:focus,
+            .form-control:active,
+            textarea.form-control:hover,
+            textarea.form-control:focus,
+            textarea.form-control:active
+            {
+                outline: 0px;
+                border-bottom: 1px solid #401627;
+                box-shadow: none;
+            }
+            .form-control
+            {
+                background-color: transparent;
+                border: none;
+                border-radius: 0;
+                box-shadow:none;
+                outline: 0px;
+                margin-bottom: 30px;
+                border-bottom: 1px solid #401627;
+                padding-bottom: 5px;
+                color: #fff;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+            .form-control::placeholder,
+            textarea.form-control::placeholder
+            {
+                color: #fff;
+                font-size: 15px;
+            }
+            .del-btn
+            {
+                background-color: #f91a77;
+                padding: 10px;
+                border-radius: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-transform: capitalize;
+                color: #fff;
+                font-size: 16px;
+                transition: all .4s
+            }
+            .del-btn:active
+            {
+                color: #fff;
+                box-shadow: none;
+                outline: 0px;
+                background-color: transparent;  
+                border: 1px solid #f91a77;    
+            }
+            .add-btn
+            {
+                background-color: transparent;
+                border: 1px solid #401627;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-transform: capitalize;
+                color: #fff;
+                font-size: 16px;
+                transition: all .4s
+            }
+            .add-btn:hover,
+            .add-btn:active,
+            .add-btn:focus
+            {
+                color: #fff;
+                box-shadow: none;
+                border: 1px solid #000;
+                background-color: #000;
+                outline:1px solid #000;
+            }
+            .box
+            {
+                    background:linear-gradient(33deg, #536BCE 75%, #F91A74 100%);
+                    padding: 30px;
+                    border-radius: 10px;
+            }
+            .note-head
+            {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-weight: 600;
+                color: #000000b0;
+                text-transform: capitalize;
+            }
+            .box .lead
+            {
+                color:rgba(0, 0, 0, 0.86);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.5;    
+            }            
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="big-one">
+                <div class="container">
+                <h1 class="text-center">save your note</h1>    
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-xs-12 div-note">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="noteTitle" aria-describedby="emailHelp" placeholder="title..">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control text" id="noteDescr" placeholder="save your thoughts.."></textarea>
+                        </div>
+                        <button class="btn add-btn" id="mybtn">add note</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <h2 class="text-center">your notes</h2>
+                <div class="row">
+                    <div class="col-lg-12 Notes">
+                        <div id="showNote">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    <script src="main.js"></script>
+    </body>
+
+</html>
